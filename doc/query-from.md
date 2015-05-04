@@ -1,3 +1,6 @@
+---
+---
+
 #Query *.from(resource)*
 
 Every Breeze query needs a target **resource** that identifies the destination of the query.
