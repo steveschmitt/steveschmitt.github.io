@@ -1,2 +1,2 @@
 # steveschmitt.github.io
-Documenation on Github Pages
+Documentation on Github Pages
