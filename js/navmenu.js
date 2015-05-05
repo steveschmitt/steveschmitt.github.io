@@ -11,7 +11,7 @@ $(window).on('hashchange', function() {
 
 $("a:not('.dropdown-toggle')").click(function(event) {
     var url = event.target.pathname;
-    if (url == location.pathname) return;
+    if (url == location.pathname) return false;
     if (url && !url.indexOf("#") == 0) {
         url = "#" + url;
     }
