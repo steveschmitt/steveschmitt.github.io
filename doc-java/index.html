@@ -23,7 +23,28 @@
     <![endif]-->
 </head>
 
-<body class="noleftnav">
+<body>
+    <div id="leftnav" class="navmenu navmenu-default navmenu-fixed-left offcanvas-sm">
+        <a class="navmenu-brand visible-md visible-lg" href="#">Breeze Java Server</a>
+		<ul class="nav navmenu-nav">
+			<li><a href="java01.html">Java page 1</a></li>
+			<li><a href="java02.html">Java page 2</a></li>
+			<li><a href="java03.html">Java page 3</a></li>
+			<li class="dropdown">
+				<a href="#" class="dropdown-toggle" data-toggle="dropdown">Dropdown <b class="caret"></b></a>
+				<ul class="dropdown-menu navmenu-nav">
+					<li><a href="#">Action</a></li>
+					<li><a href="#">Another action</a></li>
+					<li><a href="#">Something else here</a></li>
+					<li class="divider"></li>
+					<li class="dropdown-header">Nav header</li>
+					<li><a href="#">Separated link</a></li>
+					<li><a href="#">One more separated link</a></li>
+				</ul>
+			</li>
+		</ul>
+    </div>
+
     <div id="topnav" class="navbar navbar-default navbar-fixed-top">
         <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
             <span class="icon-bar"></span>
@@ -39,7 +60,7 @@
         <div class="page-header">
             <h1>Breeze Documentation</h1>
         </div>
-        <p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
+		<h3>This is the landing page for Java Server</h3>
     </div><!-- /.container -->
     <!-- Bootstrap core JavaScript
     ================================================== -->

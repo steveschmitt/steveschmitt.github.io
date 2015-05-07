@@ -1,4 +1,4 @@
-﻿html, body {
+html, body {
   height: 100%;
 }
 body {
@@ -27,7 +27,7 @@ body {
   max-width: 100%;
 }
 
-@media (min-width: 1px) {
+@media (max-width: 992px) {
   .navbar-toggle {
     display: block !important;
   }
@@ -35,12 +35,17 @@ body {
 
 @media (min-width: 992px) {
   body {
-    padding: 0 0 0 300px;
+    padding: 50px 0 0 300px;
   }
-  .navmenu {
+
+  body.noleftnav {
+    padding: 50px 0 0 0;
+  }
+  
+  /*.navmenu {
     padding-top: 0;
   }
   .navbar {
-    display: none !important; /* IE8 fix */
-  }
+    display: none !important; 
+  }*/ /* IE8 fix */
 }
