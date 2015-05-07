@@ -1,4 +1,4 @@
-
+﻿
 $(window).on('hashchange', function() {
     var url = location.hash.substring(1);
     $("li.active").removeClass("active");
@@ -10,9 +10,13 @@ $(window).on('hashchange', function() {
 });
 
 
-$("a:not('.dropdown-toggle, .navbar-brand')").click(function(event) {
+$("a:not('.dropdown-toggle')").click(function(event) {
     var url = event.target.pathname;
     if (url == location.pathname) return false;
+
+    // if ends with '/', don't add the hash, let browser handle normally
+    if (url.substr(url.length - 1) == '/') return true;
+
     if (url && !url.indexOf("#") == 0) {
         url = "#" + url;
     }

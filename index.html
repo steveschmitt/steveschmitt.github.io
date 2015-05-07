@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="utf-8">
@@ -24,12 +24,22 @@
 </head>
 
 <body class="noleftnav">
-    <div id="topnav" class="navbar navbar-default navbar-fixed-top">
+    <div id="leftnav" class="navmenu navmenu-default navmenu-fixed-left offcanvas">
+        <a class="navmenu-brand" href="/doc-js/">BreezeJS Client</a>
+        <a class="navmenu-brand" href="/doc-java/">Java Server</a>
+        <a class="navmenu-brand" href="/doc-net/">.NET Server</a>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top hidden-md hidden-lg">
         <button type="button" class="navbar-toggle" data-toggle="offcanvas" data-target=".navmenu">
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
         </button>
+    </div>
+
+    <div class="navbar navbar-default navbar-fixed-top hidden-sm">
+        <a class="navbar-brand pull-left" href="/"><strong>Breeze</strong></a>
         <a class="navbar-brand" href="/doc-js/">BreezeJS Client</a>
         <a class="navbar-brand" href="/doc-java/">Java Server</a>
         <a class="navbar-brand" href="/doc-net/">.NET Server</a>
@@ -37,7 +47,7 @@
 
     <div class="container" id="docpage">
         <div class="page-header">
-            <h1>Breeze Documentation</h1>
+            <h1>Breeze Introduction</h1>
         </div>
         <p class="lead">This example shows the navmenu element. If the viewport is <b>less than 992px</b> the menu will be placed the off canvas and will be shown with a slide in effect.</p>
     </div><!-- /.container -->
