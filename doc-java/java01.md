@@ -29,20 +29,20 @@
 </style>
 
 <div class="diagram" style="width: 400px">
-<div class="diagram-box" style="width: 250px">
-<div class="diagram-box-title">Browser</div>
-<div class="diagram-box-row" style="background-color: rgb(226, 98, 189);">Angular / KO / Aurelia / etc.</div>
-<div class="diagram-box-row "style="background-color: rgb(126, 197, 238);">BreezeJS</div>
-</div>
+	<div class="diagram-box" style="width: 250px">
+		<div class="diagram-box-title">Browser</div>
+		<div class="diagram-box-row" style="background-color: rgb(226, 98, 189);">Angular / KO / Aurelia / etc.</div>
+		<div class="diagram-box-row" style="background-color: rgb(126, 197, 238);">BreezeJS</div>
+	</div>
 
-<div class="diagram-line" style="height: 40px;"></div>
+	<div class="diagram-line" style="height: 40px;"></div>
 
-<div class="diagram-box" style="width: 300px">
-<div class="diagram-box-title">Java Server</div>
-<div class="diagram-box-row" style="background-color: rgb(113, 159, 192);">Servlet / MVC / JAX-RS / etc.</div>
-<div class="diagram-box-row" style="background-color: rgb(126, 197, 238);">Breeze Java</div>
-<div class="diagram-box-row" style="background-color: rgb(219, 212, 184);">Hibernate / JPA</div>
-</div>
+	<div class="diagram-box" style="width: 300px">
+		<div class="diagram-box-title">Java Server</div>
+		<div class="diagram-box-row" style="background-color: rgb(113, 159, 192);">Servlet / MVC / JAX-RS / etc.</div>
+		<div class="diagram-box-row" style="background-color: rgb(126, 197, 238);">Breeze Java</div>
+		<div class="diagram-box-row" style="background-color: rgb(219, 212, 184);">Hibernate / JPA</div>
+	</div>
 </div>
 
 ### More explanation
