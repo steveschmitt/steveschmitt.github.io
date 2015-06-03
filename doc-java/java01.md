@@ -59,7 +59,7 @@ The *HibernateQueryProcessor* constructor takes *Metadata* object created as a r
 
 The HibernateQueryProcessor typically builds Criteria queries from jsonified *EntityQuery* instances.  Each query also needs the Class on which the query operates.  Example:
 
-```Java
+{% highlight java %}
 // metadata is the metadata for the hibernate model being queried
 // sessionFactory is a Hibernate SessionFactory
 QueryProcessor qp = new HibernateQueryProcessor(metadata, sessionFactory);
@@ -71,13 +71,13 @@ String json = "{ where: { country: 'Brazil' }, take: 5 }";
 QueryResult qr = qp.executeQuery(Customer.class, json);
 Collection results = qr.getResults();
 String jsonResults = qr.toJson();
-```
+{% endhighlight %}
 	
 Behind the scenes, that json string is parsed into an *EntityQuery* object, which is then converted into a Criteria query, which is then executed.  In a Java servelet app, the *QueryResult* object can be converted to json via a 'toJson' call and returned from the HTTP request to the breeze client.
 
 Alternatively the server side breeze EntityQuery can be constructed via the EntityQuery construction api. The construction api provides a more structured, strongly typed alternative for creating a query.
 
-```Java
+{% highlight java %}
 // Customers with company names starting with 'A'
 Predicate newPred = new BinaryPredicate(Operator.StartsWith,
             "companyName", "A");
@@ -87,13 +87,14 @@ EntityQuery eq = new EntityQuery().where(newPred);
 // EntityQuery("{ companyName: { startsWith: 'A' }}");
 QueryResult qr = executeQuery(Customer.class, eq);
 String jsonResults = qr.toJson();        
-```
+{% endhighlight %}
+
 
 ##### Combining client query with additional server query restrictions
 
 In some scenarios, you may want to be able to allow the client to send  queries, but apply additional filters on the server.  Here's one way:
 
-```Java
+{% highlight java %}
 // assuming the 'json' var came in via a HttpServlet request.
  
 // Create an EntityQuery based on what the original query from the client
@@ -107,7 +108,8 @@ eq = eq.where(newPred).take(10);
 QueryResult qr = qp.executeQuery(Customer.class, eq);
 Collection results = qr.getResults();
 String jsonResults = qr.toJson();
-```
+{% endhighlight %}
+
      
 Naturally you would apply appropriate exception handling in a real application.
 
