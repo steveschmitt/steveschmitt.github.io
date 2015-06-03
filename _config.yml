@@ -1,5 +1,5 @@
-markdown: redcarpet
-highlighter: pygments
+markdown: kramdown
+highlighter: rouge
 encoding: utf-8
 gems:
   - jekyll-redirect-from
