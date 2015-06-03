@@ -1,7 +1,5 @@
-markdown: kramdown
+markdown: redcarpet
 highlighter: pygments
-kramdown:
-  input: GFM
 
 encoding: utf-8
 gems:
