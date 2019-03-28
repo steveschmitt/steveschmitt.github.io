@@ -1,0 +1,32 @@
+<html>
+<body>
+<div id="statusdiv">
+</div>
+<script type="text/javascript">
+
+function getParameter(paramName) {
+  var searchString = window.location.search.substring(1);
+  var params = searchString.split("&");
+  var i, val;
+
+  for (i=0;i<params.length;i++) {
+    val = params[i].split("=");
+    if (val[0] == paramName) {
+      return val[1];
+    }
+  }
+  return null;
+}
+
+var status = getParameter('event');
+// var el = document.getElementById('statusdiv');
+// el.innerHTML = status;
+
+window.name = status || 'esigndone';
+
+// window.top.postMessage(status, window.location.origin);
+window.top.postMessage(status, '*');
+
+</script>
+</body>
+</html>
