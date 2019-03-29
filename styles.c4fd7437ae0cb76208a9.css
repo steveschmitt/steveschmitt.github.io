@@ -6310,16 +6310,10 @@ hr {
   flex-wrap: wrap; }
 #fullframe {
   border: none;
-  position: fixed;
-  top: 55px;
-  left: 0;
   width: 100vw;
   height: calc(100vh - 55px);
   background-color: white;
   z-index: 20; }
-@media screen and (max-width: 480px) {
-    #fullframe {
-      height: 93%; } }
 /* ========================
 LAYOUTS STYLES
 =========================*/
@@ -8096,4 +8090,4 @@ ul.nav-tabs .nav-item .nav-link a:hover {
     cursor: pointer; }
 
 
-/*# sourceMappingURL=styles.df098d6d36053af3bd60.css.map*/
+/*# sourceMappingURL=styles.c4fd7437ae0cb76208a9.css.map*/
