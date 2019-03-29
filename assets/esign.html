@@ -25,7 +25,12 @@ var status = getParameter('event');
 window.name = status || 'esigndone';
 
 // window.top.postMessage(status, window.location.origin);
-window.top.postMessage(status, '*');
+if (window.opener) {
+  window.opener.postMessage(status, '*');
+  window.close();
+} else {
+  window.top.postMessage(status, '*');
+}
 
 </script>
 </body>
